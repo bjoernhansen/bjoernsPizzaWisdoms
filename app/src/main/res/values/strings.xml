@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">@string/bjoerns_pizza_wisdoms</string>
+    <string name="testbjoern">TestBjoern</string>
+    <string name="next_wisdom">nächste Weisheit</string>
+    <string name="bjoerns_pizza_wisdoms">Björns Pizza-Weisheiten</string>
+    <string name="pizza_image">pizza image</string>
+    <string name="viele_wege_f_hren_zur_pizza">Viele Wege führen zur Pizza!</string>
+</resources>
