@@ -24,7 +24,6 @@ public class PizzaWisdomSelector {
         wisdomList.add("Wenn zwei sich streiten, isst der Dritte die Pizza.");
         wisdomList.add("Keine Hände, keine Pizza.");
         wisdomList.add("Pasta ist silber, Pizza ist gold.");
-        wisdomList.add("Pasta ist silber, Pizza ist gold.");
         wisdomList.add("Lieber die Pizza in der Hand als die Spaghetti auf dem Teppich.");
         wisdomList.add("Man soll die Pizza nicht vor dem Backen loben.");
         wisdomList.add("Bei einer geschenkten Pizza riecht man nicht an der Salami.");
@@ -33,6 +32,9 @@ public class PizzaWisdomSelector {
         wisdomList.add("Andere Pizzarias, andere Pizzen.");
         wisdomList.add("Kleiner Hunger, kleine Pizza.");
         wisdomList.add("Keine Pizza in Nizza.");
+        wisdomList.add("In der allergrößten Not schmeckt die Pizza auch ohne Belag.");
+        wisdomList.add("Nach der Pizza ist vor der Pizza.");
+        wisdomList.add("Liebe geht durch den Pizzabauch.");
     }
 
     private String getWisdom(){
