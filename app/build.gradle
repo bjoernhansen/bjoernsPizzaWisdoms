@@ -8,9 +8,9 @@ android {
     defaultConfig {
         applicationId "com.blueflame.quoteoftheday"
         minSdk 21
-        targetSdk 34
-        versionCode 6
-        versionName "1.5"
+        targetSdk 35
+        versionCode 7
+        versionName "1.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
