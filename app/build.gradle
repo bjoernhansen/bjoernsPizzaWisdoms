@@ -3,13 +3,14 @@ plugins {
 }
 
 android {
-    compileSdk 34
+    namespace "com.blueflame.quoteoftheday"
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.blueflame.quoteoftheday"
         minSdk 21
-        targetSdk 35
-        versionCode 7
+        targetSdk 36
+        versionCode 8
         versionName "1.6"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -19,6 +20,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    testOptions {
+        unitTests.all {
+            useJUnitPlatform()
         }
     }
     compileOptions {
