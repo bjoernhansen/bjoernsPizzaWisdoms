@@ -47,8 +47,8 @@ Zurück/erneutes Öffnen prüfen. Systemleisten dürfen nichts verdecken.
 ## Android-16-Prüfung
 
 - Edge-to-edge ist bei Ziel-API 36 auf Android 16 verbindlich. Das bestehende
-  Layout berücksichtigt deshalb mit `fitsSystemWindows` die Systemleisten;
-  deren Darstellung muss zusätzlich auf einem Gerät geprüft werden.
+  Layout fordert deshalb mit `fitsSystemWindows` die Systemleisten-Abstände an.
+  Die tatsächliche Darstellung ist noch auf einem Android-16-Gerät zu prüfen.
 - Die App hat eine einzige exportierte Launcher-Activity, keine eigenen
   Zurück-Handler und keine Orientierungssperre. Änderungen am Zurück-Verhalten
   oder an Einschränkungen großer Displays benötigen daher keinen Umbau.
@@ -75,6 +75,16 @@ Play Console prüfen; eine Ziel-API-Änderung allein garantiert keine Zulassung.
   und ist unsigniert.
 - Installation und Build mit den wiederverwendbaren Cloud-Schritten erfolgreich
   wiederholt.
+
+Die Gerätetests wurden **nicht ausgeführt**: Der Cloud-Emulator ohne KVM erreicht
+keinen stabilen Android-16-Systemstart. Im Android-Protokoll beendet der Watchdog
+den Systemprozess (`WATCHDOG KILLING SYSTEM PROCESS`, Hauptthread über 63 Sekunden
+blockiert); System-Apps melden anschließend `DeadSystemException`. Dies geschieht
+vor der Installation der Pizza-App. Der Installationsversuch meldet
+`device is still booting`. Dies ist eine Grenze der Laufzeitprüfung in dieser
+Cloud, kein nachgewiesener Fehler der Pizza-App. Die Systemleisten und den
+Weiter-Button vor dem Release auf einem Android-16-Gerät oder einem lokal
+hardwarebeschleunigten Android-16-Emulator prüfen.
 
 ## Signiertes AAB erstellen
 
