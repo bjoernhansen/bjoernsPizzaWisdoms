@@ -92,8 +92,8 @@ hardwarebeschleunigten Android-16-Emulator prüfen.
    Tracks den höchsten jemals hochgeladenen Versionscode prüfen. `versionCode`
    in `app/build.gradle` muss größer sein. **8 nur verwenden, wenn der höchste
    bisherige Wert höchstens 7 ist.** Ein bereits hochgeladener Code ist nicht
-   wiederverwendbar. Der im Repository abgelegte alte Release-Build beweist
-   nicht den aktuellen Stand der Play Console.
+   wiederverwendbar. Ein alter Release-Build aus der Git-Historie beweist nicht den aktuellen
+   Stand der Play Console.
 2. Bestehenden Keystore, Alias und Passwörter sicher bereithalten. Unter
    **App-Integrität → App-Signierung** prüfen, welcher Upload-Schlüssel erwartet
    wird. Den bisherigen passenden Schlüssel verwenden; keinen neuen Keystore
@@ -105,8 +105,9 @@ hardwarebeschleunigten Android-16-Emulator prüfen.
    Passwörter lokal eingeben, Variante **release** wählen und bauen.
 4. Das gerade erzeugte AAB aus dem im Assistenten angegebenen Ausgabeordner
    verwenden. Das von `bundleRelease` in der Cloud erstellte AAB ist **unsigniert**.
-   Auch `app/release/app-release.aab` im Repository ist ein altes Artefakt und
-   darf nicht versehentlich hochgeladen werden.
+   Das früher versionierte `app/release/app-release.aab` wurde aus der
+   Git-Verwaltung entfernt. Eine noch lokal vorhandene Kopie ist ein altes
+   Artefakt und darf nicht versehentlich hochgeladen werden.
 
 ## In Google Play einreichen
 

@@ -1,18 +1,30 @@
+# Local IDE and operating-system files
+/.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
 .DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# Gradle and generated build files
+.gradle/
+build/
+bin/
+gen/
+out/
+*.class
+*.dex
+*.log
+
+# Generated Android packages
+*.apk
+*.aab
+*.aar
+*.ap_
+
+# Local Android SDK configuration and captures
 local.properties
-/.idea
-/app/debug/app-debug.aab
-/.idea/gradle.xml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local signing keys
+*.jks
+*.keystore
