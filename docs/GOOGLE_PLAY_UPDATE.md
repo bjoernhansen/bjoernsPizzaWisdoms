@@ -120,3 +120,11 @@ hardwarebeschleunigten Android-16-Emulator prüfen.
    Test-Release anzulegen aktualisiert noch nicht die öffentliche App.
 
 Diese Änderungen veröffentlichen selbst nichts bei Google Play.
+
+## Kleine Bildschirme
+
+Die bisherigen festen 300-dp-Abstände und die unbeschränkte Bildgröße haben auf
+dem Nexus S (API 26) Bild und Button abgeschnitten. Das Layout verankert den
+Button nun unten, lässt dem Text seine benötigte Höhe und skaliert das Bild
+proportional in den verbleibenden Platz. Nach Aktualisierung des Branches auf
+dem Nexus-S-Emulator erneut prüfen; der Android-16-Test bleibt zusätzlich nötig.
